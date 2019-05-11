@@ -1,0 +1,8 @@
+/* Bundle display name */
+"CFBundleDisplayName" = "mom's care";
+/* Bundle name */
+"CFBundleName" = "Week9Tutorial";
+/* Privacy - Face ID Usage Description */
+"NSFaceIDUsageDescription" = "This app requires Face ID permission to authenticate using Face recognition";
+/* Privacy - Location When In Use Usage Description */
+"NSLocationWhenInUseUsageDescription" = "Google map want to access your location";

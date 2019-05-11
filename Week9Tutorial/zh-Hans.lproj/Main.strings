@@ -1,48 +1,155 @@
-/* Class = "UITabBarItem"; title = "Map"; ObjectID = "2b1-Be-yhh"; */
-"2b1-Be-yhh.title" = "地图";
+// Created by 张思宇(Siyu Zhang) on 11/5/19.
 
-/* Class = "UIButton"; normalTitle = "Show Me That Percentage"; ObjectID = "7GW-i9-Knq"; */
-"7GW-i9-Knq.normalTitle" = "查询百分比";
 
-/* Class = "UILabel"; text = "This is a mom's care demo"; ObjectID = "bG6-us-SdK"; */
-"bG6-us-SdK.text" = "这是妈妈的爱演示";
+/* Class = "UINavigationItem"; title = "Map"; ObjectID = "2m7-M9-o2R"; */
+"2m7-M9-o2R.title" = "地图";
+
+/* Class = "UILabel"; text = "Feel part of a bigger Chinese community\n\nGet valuable support from the network of \nChinese people\n\nFeel Australia \"A home away from home\" \n"; ObjectID = "6hr-ZC-7sx"; */
+"6hr-ZC-7sx.text" = "你在澳大利亚遇到过困难么\n 有时总会有语言不通\n 或者是所说方言同是华人也难以理解？ \n\n让我们帮助你\n 让你在澳大利亚找到你如家乡一般的感觉";
+
+/* Class = "UILabel"; text = "4.9"; ObjectID = "7ES-fc-ju3"; */
+"7ES-fc-ju3.text" = "4.9";
+
+/* Class = "UIButton"; normalTitle = "Show History Data"; ObjectID = "7GW-i9-Knq"; */
+"7GW-i9-Knq.normalTitle" = "显示历史数据";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "7ra-0G-hwg"; */
+"7ra-0G-hwg.title" = "主页";
+
+/* Class = "UILabel"; text = "English Proficiency:"; ObjectID = "CQr-mk-pZ9"; */
+"CQr-mk-pZ9.text" = "英语专业程度:";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DtM-Gb-M8l"; */
+"DtM-Gb-M8l.normalTitle" = "Button";
 
 /* Class = "UILabel"; text = "Want to know Vaccination Rate "; ObjectID = "Dwa-IR-WFW"; */
-"Dwa-IR-WFW.text" = "想知道疫苗接种率";
+"Dwa-IR-WFW.text" = "想知道你所住地区的 ";
+
+/* Class = "UIButton"; normalTitle = "Choose Your Baby's Age"; ObjectID = "EOX-Zp-dzq"; */
+"EOX-Zp-dzq.normalTitle" = "选择您孩子的年龄";
 
 /* Class = "UILabel"; text = "IN YOUR AREA ?"; ObjectID = "Ede-D4-e48"; */
-"Ede-D4-e48.text" = "在你的区域？";
+"Ede-D4-e48.text" = "疫苗覆盖率么?";
 
-/* Class = "UIButton"; normalTitle = "Take me to Information"; ObjectID = "EOX-Zp-dzq"; */
-"EOX-Zp-dzq.normalTitle" = "显示信息";
+/* Class = "UIButton"; normalTitle = "Find Toilets"; ObjectID = "Edu-PQ-rrF"; */
+"Edu-PQ-rrF.normalTitle" = "查找卫生间";
 
-/* Class = "UILabel"; text = "???"; ObjectID = "fBf-ux-bC5"; */
-"fBf-ux-bC5.text" = "???";
+/* Class = "UILabel"; text = "Do You Know?\nYou need to prepare different knid of food for your baby in his/her different ages in Month"; ObjectID = "GxR-KM-AKQ"; */
+"GxR-KM-AKQ.text" = "对于一个孩子，在不同成长时期，你需要为他们准备不同类型的食物来保证他们的健康发育";
 
-/* Class = "UITabBarItem"; title = "Home"; ObjectID = "Ftu-el-Nsk"; */
-"Ftu-el-Nsk.title" = "主页";
+/* Class = "UILabel"; text = "Find the Difference Between China and Australia"; ObjectID = "H3N-Eu-E1Y"; */
+"H3N-Eu-E1Y.text" = "查看中澳疫苗差异";
 
-/* Class = "UILabel"; text = "Group of age (Mon):"; ObjectID = "FXu-pv-W4o"; */
-"FXu-pv-W4o.text" = "年龄组（月份）：";
+/* Class = "UILabel"; text = "Label"; ObjectID = "JGR-Lc-Cui"; */
+"JGR-Lc-Cui.text" = "Label";
 
-/* Class = "UITabBarItem"; title = "Inquire"; ObjectID = "GiZ-rz-Vph"; */
-"GiZ-rz-Vph.title" = "查询";
+/* Class = "UIBarButtonItem"; title = "Find Hospital"; ObjectID = "JKy-o4-CAQ"; */
+"JKy-o4-CAQ.title" = "寻找医院";
 
-/* Class = "UINavigationItem"; title = "ADDRESS"; ObjectID = "I1x-PI-049"; */
-"I1x-PI-049.title" = "地址";
+/* Class = "UIBarButtonItem"; title = "Show Photo"; ObjectID = "JnW-do-vx4"; */
+"JnW-do-vx4.title" = "显示照片";
+
+/* Class = "UITabBarItem"; title = "Tracker"; ObjectID = "KGn-4q-tP5"; */
+"KGn-4q-tP5.title" = "疫苗信息";
 
 /* Class = "UINavigationItem"; title = "Vaccination in Your Area"; ObjectID = "LS2-GK-eMx"; */
-"LS2-GK-eMx.title" = "您所在地区的疫苗接种";
+"LS2-GK-eMx.title" = "疫苗覆盖率";
 
-/* Class = "UIBarButtonItem"; title = "Parenting Rooms"; ObjectID = "rTY-xg-bTX"; */
-"rTY-xg-bTX.title" = "育儿室";
+/* Class = "UILabel"; text = "Find the Difference Between China and Australia"; ObjectID = "M7x-iY-mOe"; */
+"M7x-iY-mOe.text" = "查询中澳疫苗差距";
+
+/* Class = "UILabel"; text = "Find Toilets"; ObjectID = "Mke-1j-MCF"; */
+"Mke-1j-MCF.text" = "寻找卫生间";
+
+/* Class = "UIButton"; normalTitle = "Find Parks"; ObjectID = "N6e-xp-NWa"; */
+"N6e-xp-NWa.normalTitle" = "寻找公园";
+
+/* Class = "UIButton"; normalTitle = "Find More"; ObjectID = "Oof-Ee-P0s"; */
+"Oof-Ee-P0s.normalTitle" = "查看更多";
+
+/* Class = "UITabBarItem"; title = "Baby's Care"; ObjectID = "Si6-pY-pwV"; */
+"Si6-pY-pwV.title" = "关爱宝宝";
 
 /* Class = "UINavigationItem"; title = "Vaccination Info"; ObjectID = "TZR-Dt-vPC"; */
-"TZR-Dt-vPC.title" = "疫苗接种信息";
+"TZR-Dt-vPC.title" = "疫苗信息";
 
-/* Class = "UILabel"; text = "Where are you from:"; ObjectID = "uq0-am-MQn"; */
-"uq0-am-MQn.text" = "你从哪里来：";
+/* Class = "UITextField"; placeholder = "Tap to Select"; ObjectID = "TZw-cy-RJI"; */
+"TZw-cy-RJI.placeholder" = "点击选择";
 
-/* Class = "UITabBarItem"; title = "Info"; ObjectID = "w9N-7Y-gnO"; */
-"w9N-7Y-gnO.title" = "信息";
+/* Class = "UIButton"; normalTitle = "FIND MORE"; ObjectID = "TyJ-NY-LQl"; */
+"TyJ-NY-LQl.normalTitle" = "查看更多";
 
+/* Class = "UILabel"; text = "Find Kindergartens"; ObjectID = "Ula-JD-COa"; */
+"Ula-JD-COa.text" = "寻找幼儿园";
+
+/* Class = "UITabBarItem"; title = "Connect"; ObjectID = "VsW-do-yTG"; */
+"VsW-do-yTG.title" = "查询地图";
+
+/* Class = "UINavigationItem"; title = "Mom's Care"; ObjectID = "Xxx-We-71h"; */
+"Xxx-We-71h.title" = "Mom's Care";
+
+/* Class = "UINavigationItem"; title = "Baby's Care"; ObjectID = "aKW-RH-dCD"; */
+"aKW-RH-dCD.title" = "关爱宝宝";
+
+/* Class = "UILabel"; text = "Find Parks"; ObjectID = "b3q-iD-tt9"; */
+"b3q-iD-tt9.text" = "寻找公园";
+
+/* Class = "UILabel"; text = "Vaccination Differences Between"; ObjectID = "cYr-4w-CUk"; */
+"cYr-4w-CUk.text" = "";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "ds5-v5-Qi4"; */
+"ds5-v5-Qi4.normalTitle" = "提交";
+
+/* Class = "UILabel"; text = "Take your first steps to get closer to your culture"; ObjectID = "gb9-2v-zuP"; */
+"gb9-2v-zuP.text" = "选择您的心意社区";
+
+/* Class = "UILabel"; text = "Chinese Population:"; ObjectID = "gl3-kY-F5p"; */
+"gl3-kY-F5p.text" = "华人人口数量:";
+
+/* Class = "UIButton"; normalTitle = "Find Location"; ObjectID = "h9t-3t-ayg"; */
+"h9t-3t-ayg.normalTitle" = "查找位置";
+
+/* Class = "UILabel"; text = "Find the Difference Between China and Australia"; ObjectID = "hDy-Ao-jkN"; */
+"hDy-Ao-jkN.text" = "查找中澳疫苗差异";
+
+/* Class = "UITabBarItem"; title = "Milestone"; ObjectID = "hT5-JK-1KW"; */
+"hT5-JK-1KW.title" = "里程碑";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hU7-MJ-7rO"; */
+"hU7-MJ-7rO.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jV1-bP-Tf7"; */
+"jV1-bP-Tf7.text" = "Label";
+
+/* Class = "UILabel"; text = "Vaccination Tracker"; ObjectID = "jeW-iA-kqP"; */
+"jeW-iA-kqP.text" = "疫苗信息";
+
+/* Class = "UIButton"; normalTitle = "FIND MORE"; ObjectID = "kcV-Mc-rhw"; */
+"kcV-Mc-rhw.normalTitle" = "查看更多";
+
+/* Class = "UILabel"; text = "Find Childcare Centres"; ObjectID = "lbI-rb-ihn"; */
+"lbI-rb-ihn.text" = "寻找日托班";
+
+/* Class = "UILabel"; text = "China and Australia"; ObjectID = "ocV-4r-PNn"; */
+"ocV-4r-PNn.text" = "查询疫苗差异";
+
+/* Class = "UITextField"; placeholder = "Tap to Select"; ObjectID = "qWA-ZE-miU"; */
+"qWA-ZE-miU.placeholder" = "点击选择";
+
+/* Class = "UINavigationItem"; title = "Vaccination Tracker"; ObjectID = "rTX-JD-VyN"; */
+"rTX-JD-VyN.title" = "疫苗信息";
+
+/* Class = "UINavigationItem"; title = "Connect You"; ObjectID = "sYa-OP-O2J"; */
+"sYa-OP-O2J.title" = "地图查询";
+
+/* Class = "UIButton"; normalTitle = "Find Location"; ObjectID = "ub2-G6-mY1"; */
+"ub2-G6-mY1.normalTitle" = "寻找地址";
+
+/* Class = "UILabel"; text = "Language:"; ObjectID = "w6W-X1-0RR"; */
+"w6W-X1-0RR.text" = "语言:";
+
+/* Class = "UINavigationItem"; title = "Locations Sort By Rate"; ObjectID = "wgm-Y1-svP"; */
+"wgm-Y1-svP.title" = "查找结果（按评分排序）";
+
+/* Class = "UITextField"; placeholder = "Tap to Select"; ObjectID = "zNI-Wy-GHJ"; */
+"zNI-Wy-GHJ.placeholder" = "点击选择";

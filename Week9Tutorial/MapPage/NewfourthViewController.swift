@@ -9,17 +9,26 @@
 import UIKit
 import Firebase
 import FirebaseDatabase
-import Charts
 
 class NewfourthViewController: UIViewController,UITableViewDelegate,UITableViewDataSource {
-
+    
     @IBOutlet weak var tableview: UITableView!
     var ref: DatabaseReference?
     var tableViewDataDArray:[[String:Any]] = []
+    var placeId = [String]()
+    
+    var currentType = ""
+    
+    let rowDataArray = ["Hospital","Childcare","Kindergarten","Toilet","Parks"]
+    let imageNames = ["stethoscope-840125_1280.jpg","young-409197_1280.jpg","colored-pencils-656178_1280.jpg","wc-265279_1280.jpg","bench-560435_1280.jpg"]
+    
+    var progressHUD:ProgressHUD?
+    
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Locations"
         self.tableview.delegate = self
         self.tableview.dataSource = self
     }
@@ -31,25 +40,35 @@ class NewfourthViewController: UIViewController,UITableViewDelegate,UITableViewD
         return 0.01
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return self.rowDataArray.count
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 44
+        return 150
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell:UITableViewCell = tableView.dequeueReusableCell(withIdentifier: "cell")!
+        let label:UILabel = cell.viewWithTag(100) as! UILabel
+        let imageView:UIImageView = cell.viewWithTag(101) as! UIImageView
+        
+        label.text = self.rowDataArray[indexPath.row]
+        imageView.image = UIImage(named: self.imageNames[indexPath.row])
+        
+        cell.layer.borderWidth = CGFloat(10)
+        cell.layer.borderColor = tableView.backgroundColor?.cgColor
+        
         return cell
     }
+    
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let alertvc = UIAlertController.init(title: "Please Entre your Postcode", message: nil, preferredStyle: .alert)
+        weak var weakSelf = self
+        let alertvc = UIAlertController.init(title: "Please Entre a Postcode", message: nil, preferredStyle: .alert)
         let alertAction0 = UIAlertAction.init(title: "Confirm", style: .default) { (action) in
-            //push
             
-//            self.placeid(["-37.80968063155256,144.98339868157058","-37.81676535064923,144.97867159232348"])
-            self.searchLoaction(alertvc.textFields![0].text!)
+            weakSelf?.searchLoaction(alertvc.textFields![0].text!, indexPath)
+            weakSelf?.currentType = (weakSelf?.rowDataArray[indexPath.row])!
             
         }
         let alertAction1 = UIAlertAction.init(title: "Cancel", style: .cancel) { (action) in
@@ -67,36 +86,51 @@ class NewfourthViewController: UIViewController,UITableViewDelegate,UITableViewD
         let workingGroup = DispatchGroup()
         let workingQueue = DispatchQueue(label: "requestPlaceid_queue")
         
+        weak var weakSelf = self
+        self.progressHUD = ProgressHUD().show()
         for loaction:String in loactions {
             workingGroup.enter()
             workingQueue.async {
-                let url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(loaction)&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyBQJdd3kF5mxAYLk_e2kzMXY6stXJie_TA"
+                let url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(loaction)&radius=100&type=\(self.currentType)&keyword=\(self.currentType)&key=AIzaSyBQJdd3kF5mxAYLk_e2kzMXY6stXJie_TA"
                 HttpServerManager().getServerData(url) { (data) in
+                    
                     let dataArray:[[String:Any]] = data["results"] as! [[String : Any]]
                     for dic:[String:Any] in dataArray {
-                        placeidArray.append(dic["place_id"]! as! String)
+                        let placeId:String = dic["place_id"]! as! String
+                        if placeidArray.contains(placeId) == false {
+                            placeidArray.append(placeId)
+                        }
                     }
-                    print(placeidArray)
+                    //print(placeidArray)
+                    self.placeId = placeidArray
                     workingGroup.leave()
                 }
             }
         }
+        
         workingGroup.notify(queue: workingQueue) {
-            self.getRatings(placeidArray)
+            DispatchQueue.main.async(execute: {
+                if placeidArray.count == 0 {
+                    weakSelf?.progressHUD?.removeFromSuperview()
+                    ProgressHUD().showWithContent("No Data For This Postcode")
+                    return
+                }
+                weakSelf!.getRatings(placeidArray)
+            })
         }
-//        let url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(location)&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyBQJdd3kF5mxAYLk_e2kzMXY6stXJie_TA"
-//        HttpServerManager().getServerData(url) { (data) in
-//            let dataArray:[[String:Any]] = data["results"] as! [[String : Any]]
-//            for dic:[String:Any] in dataArray {
-//                placeidArray.append(dic["place_id"]! as! String)
-//            }
-//            self.getRatings(placeidArray)
-//        }
+        //        let url = "https://maps.googleapis.com/maps/api/place/nearbysearch/json?location=\(location)&radius=1500&type=restaurant&keyword=cruise&key=AIzaSyBQJdd3kF5mxAYLk_e2kzMXY6stXJie_TA"
+        //        HttpServerManager().getServerData(url) { (data) in
+        //            let dataArray:[[String:Any]] = data["results"] as! [[String : Any]]
+        //            for dic:[String:Any] in dataArray {
+        //                placeidArray.append(dic["place_id"]! as! String)
+        //            }
+        //            self.getRatings(placeidArray)
+        //        }
     }
     
-    //通线程组同时进行多个网络请求
     func getRatings(_ placeidArray:[String]) {
         
+        self.tableViewDataDArray.removeAll()
         let workingGroup = DispatchGroup()
         let workingQueue = DispatchQueue(label: "request_queue")
         
@@ -106,13 +140,27 @@ class NewfourthViewController: UIViewController,UITableViewDelegate,UITableViewD
             workingQueue.async {
                 let url = "https://maps.googleapis.com/maps/api/place/details/json?placeid=\(placeid)&key=AIzaSyBQJdd3kF5mxAYLk_e2kzMXY6stXJie_TA"
                 HttpServerManager().getServerData(url) { (data) in
-                    let dic:[String:Any] = data["result"] as! [String : Any]
+                    
+                    var dic:[String:Any] = data["result"] as! [String : Any]
+                    if let _:NSNumber = dic["rating"] as? NSNumber {
+                        //print(dic["rating"]!)
+                    }else {
+                        dic["rating"] = NSNumber(0)
+                    }
                     weakself?.tableViewDataDArray.append(dic)
                     workingGroup.leave()
                 }
             }
         }
+        
         workingGroup.notify(queue: workingQueue) {
+            DispatchQueue.main.async(execute: {
+                weakself?.progressHUD?.removeFromSuperview()
+                if weakself?.tableViewDataDArray.count == 0 {
+                    ProgressHUD().showWithContent("No Rating Data For this Postcode")
+                    return
+                }
+            })
             weakself?.bubble_SortArr(array: &weakself!.tableViewDataDArray)
         }
     }
@@ -129,7 +177,7 @@ class NewfourthViewController: UIViewController,UITableViewDelegate,UITableViewD
                 let dic1:[String:Any] = array[j+1]
                 let rating1:Float = (dic1["rating"] as! NSNumber).floatValue
                 
-                if rating > rating1{
+                if rating < rating1{
                     array.swapAt(j, j+1)
                 }
             }
@@ -142,65 +190,33 @@ class NewfourthViewController: UIViewController,UITableViewDelegate,UITableViewD
         }
     }
     
-    
-//    func getData() {
-//        Auth.auth().signIn(withEmail: "localhost@theshield.com", password: "4theshield.com")
-//        ref = Database.database().reference()
-//        ref?.child("Coverage").observeSingleEvent(of: .value, with: { (snapshot) in
-//            let value = snapshot.value as? [String:[Double]]
-//            let dic:NSDictionary = value! as NSDictionary
-//
-//            print(dic)
-//            NSLog("%@", dic)
-//            print(value!)
-//        }) { (error) in
-//            print(error.localizedDescription)
-//        }
-//    }
-    
-    func searchLoaction(_ postCode:String) {
+    func searchLoaction(_ postCode:String, _ indexPath:IndexPath) {
         var locationArray:[String] = []
         
-        for dic:[String:Any] in self.json() {
+        for dic:[String:Any] in self.getJson(self.rowDataArray[indexPath.row]) {
             if "\(dic["postcode"]!)" == postCode {
                 locationArray.append("\(String(describing: dic["lat"]!)),\(String(describing: dic["long"]!))")
             }
         }
+        if locationArray.count == 0 {
+            ProgressHUD().showWithContent("Sorry, No Records")
+            return
+        }
         self.placeid(locationArray)
     }
     
-    func json() -> [[String:Any]] {
-        return [[
-            "address" : "23,CLARENDONSTREET,EAST MELBOURNE",
-            "lat" : -37.80968063155256,
-            "long" : 144.98339868157058,
-            "name" : "East Melbourne Specialist Day Hospital",
-            "postcode" : 3002
-            ], [
-                "address" : "17,WINDSORAVENUE,GREATER DANDENONG",
-                "lat" : -37.951399999673185,
-                "long" : 145.1493000009933,
-                "name" : "Windsor Avenue Day Surgery",
-                "postcode" : 3171
-            ], [
-                "address" : "3,GIBBSTREET,BERWICK",
-                "lat" : -38.03458048694108,
-                "long" : 145.34465270350745,
-                "name" : "Hyperbaric Health Wound Centre Berwick",
-                "postcode" : 3806
-            ], [
-                "address" : "1117-1123,HOWITTSTREET,BALLARAT",
-                "lat" : -37.54055255892396,
-                "long" : 143.83228608782127,
-                "name" : "Ballarat Day Procedure Centre",
-                "postcode" : 3355
-            ], [
-                "address" : "141,CRANBOURNEROAD,FRANKSTON",
-                "lat" : -38.148188631165404,
-                "long" : 145.1433792563343,
-                "name" : "Bayside Day Procedure and Specialist Centre",
-                "postcode" : 3199
-            ] ]
+    func getJson(_ jsonName:String) ->[[String:Any]] {
+        let path = Bundle.main.path(forResource: jsonName, ofType: "json")
+        let url = URL(fileURLWithPath: path!)
+        do {
+            let data = try Data(contentsOf: url)
+            let jsonData:Any = try JSONSerialization.jsonObject(with: data, options: JSONSerialization.ReadingOptions.mutableContainers)
+            let jsonArr = jsonData as! [[String:Any]]
+            return jsonArr
+        } catch let error as Error? {
+            print("An Error Occur",error as Any)
+        }
+        return [[:]]
     }
-
+    
 }

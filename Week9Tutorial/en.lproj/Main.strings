@@ -1,0 +1,153 @@
+
+/* Class = "UINavigationItem"; title = "Map"; ObjectID = "2m7-M9-o2R"; */
+"2m7-M9-o2R.title" = "Map";
+
+/* Class = "UILabel"; text = "Feel part of a bigger Chinese community\n\nGet valuable support from the network of \nChinese people\n\nFeel Australia \"A home away from home\" \n"; ObjectID = "6hr-ZC-7sx"; */
+"6hr-ZC-7sx.text" = "Feel part of a bigger Chinese community\n\nGet valuable support from the network of \nChinese people\n\nFeel Australia \"A home away from home\" \n";
+
+/* Class = "UILabel"; text = "4.9"; ObjectID = "7ES-fc-ju3"; */
+"7ES-fc-ju3.text" = "4.9";
+
+/* Class = "UIButton"; normalTitle = "Show History Data"; ObjectID = "7GW-i9-Knq"; */
+"7GW-i9-Knq.normalTitle" = "Show History Data";
+
+/* Class = "UITabBarItem"; title = "Home"; ObjectID = "7ra-0G-hwg"; */
+"7ra-0G-hwg.title" = "Home";
+
+/* Class = "UILabel"; text = "English Proficiency:"; ObjectID = "CQr-mk-pZ9"; */
+"CQr-mk-pZ9.text" = "English Proficiency:";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "DtM-Gb-M8l"; */
+"DtM-Gb-M8l.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "Want to know Vaccination Rate "; ObjectID = "Dwa-IR-WFW"; */
+"Dwa-IR-WFW.text" = "Want to know Vaccination Rate ";
+
+/* Class = "UIButton"; normalTitle = "Choose Your Baby's Age"; ObjectID = "EOX-Zp-dzq"; */
+"EOX-Zp-dzq.normalTitle" = "Choose Your Baby's Age";
+
+/* Class = "UILabel"; text = "IN YOUR AREA ?"; ObjectID = "Ede-D4-e48"; */
+"Ede-D4-e48.text" = "IN YOUR AREA ?";
+
+/* Class = "UIButton"; normalTitle = "Find Toilets"; ObjectID = "Edu-PQ-rrF"; */
+"Edu-PQ-rrF.normalTitle" = "Find Toilets";
+
+/* Class = "UILabel"; text = "Do You Know?\nYou need to prepare different knid of food for your baby in his/her different ages in Month"; ObjectID = "GxR-KM-AKQ"; */
+"GxR-KM-AKQ.text" = "Do You Know?\nYou need to prepare different knid of food for your baby in his/her different ages in Month";
+
+/* Class = "UILabel"; text = "Find the Difference Between China and Australia"; ObjectID = "H3N-Eu-E1Y"; */
+"H3N-Eu-E1Y.text" = "Find the Difference Between China and Australia";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "JGR-Lc-Cui"; */
+"JGR-Lc-Cui.text" = "Label";
+
+/* Class = "UIBarButtonItem"; title = "Find Hospital"; ObjectID = "JKy-o4-CAQ"; */
+"JKy-o4-CAQ.title" = "Find Hospital";
+
+/* Class = "UIBarButtonItem"; title = "Show Photo"; ObjectID = "JnW-do-vx4"; */
+"JnW-do-vx4.title" = "Show Photo";
+
+/* Class = "UITabBarItem"; title = "Tracker"; ObjectID = "KGn-4q-tP5"; */
+"KGn-4q-tP5.title" = "Tracker";
+
+/* Class = "UINavigationItem"; title = "Vaccination in Your Area"; ObjectID = "LS2-GK-eMx"; */
+"LS2-GK-eMx.title" = "Vaccination in Your Area";
+
+/* Class = "UILabel"; text = "Find the Difference Between China and Australia"; ObjectID = "M7x-iY-mOe"; */
+"M7x-iY-mOe.text" = "Find the Difference Between China and Australia";
+
+/* Class = "UILabel"; text = "Find Toilets"; ObjectID = "Mke-1j-MCF"; */
+"Mke-1j-MCF.text" = "Find Toilets";
+
+/* Class = "UIButton"; normalTitle = "Find Parks"; ObjectID = "N6e-xp-NWa"; */
+"N6e-xp-NWa.normalTitle" = "Find Parks";
+
+/* Class = "UIButton"; normalTitle = "Find More"; ObjectID = "Oof-Ee-P0s"; */
+"Oof-Ee-P0s.normalTitle" = "Find More";
+
+/* Class = "UITabBarItem"; title = "Baby's Care"; ObjectID = "Si6-pY-pwV"; */
+"Si6-pY-pwV.title" = "Baby's Care";
+
+/* Class = "UINavigationItem"; title = "Vaccination Info"; ObjectID = "TZR-Dt-vPC"; */
+"TZR-Dt-vPC.title" = "Vaccination Info";
+
+/* Class = "UITextField"; placeholder = "Tap to Select"; ObjectID = "TZw-cy-RJI"; */
+"TZw-cy-RJI.placeholder" = "Tap to Select";
+
+/* Class = "UIButton"; normalTitle = "FIND MORE"; ObjectID = "TyJ-NY-LQl"; */
+"TyJ-NY-LQl.normalTitle" = "FIND MORE";
+
+/* Class = "UILabel"; text = "Find Kindergartens"; ObjectID = "Ula-JD-COa"; */
+"Ula-JD-COa.text" = "Find Kindergartens";
+
+/* Class = "UITabBarItem"; title = "Connect"; ObjectID = "VsW-do-yTG"; */
+"VsW-do-yTG.title" = "Connect";
+
+/* Class = "UINavigationItem"; title = "Mom's Care"; ObjectID = "Xxx-We-71h"; */
+"Xxx-We-71h.title" = "Mom's Care";
+
+/* Class = "UINavigationItem"; title = "Baby's Care"; ObjectID = "aKW-RH-dCD"; */
+"aKW-RH-dCD.title" = "Baby's Care";
+
+/* Class = "UILabel"; text = "Find Parks"; ObjectID = "b3q-iD-tt9"; */
+"b3q-iD-tt9.text" = "Find Parks";
+
+/* Class = "UILabel"; text = "Vaccination Differences Between"; ObjectID = "cYr-4w-CUk"; */
+"cYr-4w-CUk.text" = "Vaccination Differences Between";
+
+/* Class = "UIButton"; normalTitle = "Submit"; ObjectID = "ds5-v5-Qi4"; */
+"ds5-v5-Qi4.normalTitle" = "Submit";
+
+/* Class = "UILabel"; text = "Take your first steps to get closer to your culture"; ObjectID = "gb9-2v-zuP"; */
+"gb9-2v-zuP.text" = "Take your first steps to get closer to your culture";
+
+/* Class = "UILabel"; text = "Chinese Population:"; ObjectID = "gl3-kY-F5p"; */
+"gl3-kY-F5p.text" = "Chinese Population:";
+
+/* Class = "UIButton"; normalTitle = "Find Location"; ObjectID = "h9t-3t-ayg"; */
+"h9t-3t-ayg.normalTitle" = "Find Location";
+
+/* Class = "UILabel"; text = "Find the Difference Between China and Australia"; ObjectID = "hDy-Ao-jkN"; */
+"hDy-Ao-jkN.text" = "Find the Difference Between China and Australia";
+
+/* Class = "UITabBarItem"; title = "Milestone"; ObjectID = "hT5-JK-1KW"; */
+"hT5-JK-1KW.title" = "Milestone";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "hU7-MJ-7rO"; */
+"hU7-MJ-7rO.text" = "Label";
+
+/* Class = "UILabel"; text = "Label"; ObjectID = "jV1-bP-Tf7"; */
+"jV1-bP-Tf7.text" = "Label";
+
+/* Class = "UILabel"; text = "Vaccination Tracker"; ObjectID = "jeW-iA-kqP"; */
+"jeW-iA-kqP.text" = "Vaccination Tracker";
+
+/* Class = "UIButton"; normalTitle = "FIND MORE"; ObjectID = "kcV-Mc-rhw"; */
+"kcV-Mc-rhw.normalTitle" = "FIND MORE";
+
+/* Class = "UILabel"; text = "Find Childcare Centres"; ObjectID = "lbI-rb-ihn"; */
+"lbI-rb-ihn.text" = "Find Childcare Centres";
+
+/* Class = "UILabel"; text = "China and Australia"; ObjectID = "ocV-4r-PNn"; */
+"ocV-4r-PNn.text" = "China and Australia";
+
+/* Class = "UITextField"; placeholder = "Tap to Select"; ObjectID = "qWA-ZE-miU"; */
+"qWA-ZE-miU.placeholder" = "Tap to Select";
+
+/* Class = "UINavigationItem"; title = "Vaccination Tracker"; ObjectID = "rTX-JD-VyN"; */
+"rTX-JD-VyN.title" = "Vaccination Tracker";
+
+/* Class = "UINavigationItem"; title = "Connect You"; ObjectID = "sYa-OP-O2J"; */
+"sYa-OP-O2J.title" = "Connect You";
+
+/* Class = "UIButton"; normalTitle = "Find Location"; ObjectID = "ub2-G6-mY1"; */
+"ub2-G6-mY1.normalTitle" = "Find Location";
+
+/* Class = "UILabel"; text = "Language:"; ObjectID = "w6W-X1-0RR"; */
+"w6W-X1-0RR.text" = "Language:";
+
+/* Class = "UINavigationItem"; title = "Locations Sort By Rate"; ObjectID = "wgm-Y1-svP"; */
+"wgm-Y1-svP.title" = "Locations Sort By Rate";
+
+/* Class = "UITextField"; placeholder = "Tap to Select"; ObjectID = "zNI-Wy-GHJ"; */
+"zNI-Wy-GHJ.placeholder" = "Tap to Select";

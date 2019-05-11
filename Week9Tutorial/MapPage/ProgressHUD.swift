@@ -2,7 +2,7 @@
 //  ProgressHUD.swift
 //  Week9Tutorial
 //
-//  Created by 张越 on 2019/4/28.
+//  Created by Daniel Dz on 2019/4/28.
 //  Copyright © 2019 Jason Haasz. All rights reserved.
 //
 

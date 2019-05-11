@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:1.2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="1.2" xsi:schemaLocation="urn:oasis:names:tc:xliff:document:1.2 http://docs.oasis-open.org/xliff/v1.2/os/xliff-core-1.2-strict.xsd">
+  <file original="Week9Tutorial/Base.lproj/LaunchScreen.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="EoJ-lQ-ZZw.text">
+        <source>Mom's Care</source>
+        <note>Class = "UILabel"; text = "Mom's Care"; ObjectID = "EoJ-lQ-ZZw";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Week9Tutorial/Base.lproj/Main.storyboard" source-language="en" target-language="zh-Hans" datatype="plaintext">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="1As-Zk-GFB.text">
+        <source>Application available in Chinese</source>
+        <note>Class = "UILabel"; text = "Application available in Chinese"; ObjectID = "1As-Zk-GFB";</note>
+      </trans-unit>
+      <trans-unit id="2m7-M9-o2R.title">
+        <source>Map</source>
+        <note>Class = "UINavigationItem"; title = "Map"; ObjectID = "2m7-M9-o2R";</note>
+      </trans-unit>
+      <trans-unit id="2yA-ln-wBd.text">
+        <source>Toilets</source>
+        <note>Class = "UILabel"; text = "Toilets"; ObjectID = "2yA-ln-wBd";</note>
+      </trans-unit>
+      <trans-unit id="4oH-Dj-lDa.title">
+        <source>Map</source>
+        <note>Class = "UITabBarItem"; title = "Map"; ObjectID = "4oH-Dj-lDa";</note>
+      </trans-unit>
+      <trans-unit id="6Em-mC-Czg.text">
+        <source>hospital</source>
+        <note>Class = "UILabel"; text = "hospital"; ObjectID = "6Em-mC-Czg";</note>
+      </trans-unit>
+      <trans-unit id="6Xn-oq-HrK.text">
+        <source>of the growth records</source>
+        <note>Class = "UILabel"; text = "of the growth records"; ObjectID = "6Xn-oq-HrK";</note>
+      </trans-unit>
+      <trans-unit id="6hr-ZC-7sx.text">
+        <source>Comming Soon...
+We will help you to  find a place 
+where you want to live</source>
+        <note>Class = "UILabel"; text = "Comming Soon...\nWe will help you to  find a place \nwhere you want to live"; ObjectID = "6hr-ZC-7sx";</note>
+      </trans-unit>
+      <trans-unit id="7ES-fc-ju3.text">
+        <source>4.9</source>
+        <note>Class = "UILabel"; text = "4.9"; ObjectID = "7ES-fc-ju3";</note>
+      </trans-unit>
+      <trans-unit id="7GW-i9-Knq.normalTitle">
+        <source>Show History Data</source>
+        <target>查询百分比</target>
+        <note>Class = "UIButton"; normalTitle = "Show History Data"; ObjectID = "7GW-i9-Knq";</note>
+      </trans-unit>
+      <trans-unit id="7ra-0G-hwg.title">
+        <source>Home</source>
+        <note>Class = "UITabBarItem"; title = "Home"; ObjectID = "7ra-0G-hwg";</note>
+      </trans-unit>
+      <trans-unit id="8qC-5U-LLi.text">
+        <source>Our application will help you to</source>
+        <note>Class = "UILabel"; text = "Our application will help you to"; ObjectID = "8qC-5U-LLi";</note>
+      </trans-unit>
+      <trans-unit id="ACC-S9-LuR.text">
+        <source>Find vaccination place near me</source>
+        <note>Class = "UILabel"; text = "Find vaccination place near me"; ObjectID = "ACC-S9-LuR";</note>
+      </trans-unit>
+      <trans-unit id="AfJ-ML-hVy.text">
+        <source>Childcare Centre</source>
+        <note>Class = "UILabel"; text = "Childcare Centre"; ObjectID = "AfJ-ML-hVy";</note>
+      </trans-unit>
+      <trans-unit id="Atc-R4-hHQ.text">
+        <source>vaccination awareness status</source>
+        <note>Class = "UILabel"; text = "vaccination awareness status"; ObjectID = "Atc-R4-hHQ";</note>
+      </trans-unit>
+      <trans-unit id="CpI-1A-XIa.text">
+        <source>Find age wise growth chart</source>
+        <note>Class = "UILabel"; text = "Find age wise growth chart"; ObjectID = "CpI-1A-XIa";</note>
+      </trans-unit>
+      <trans-unit id="DtM-Gb-M8l.normalTitle">
+        <source>Button</source>
+        <note>Class = "UIButton"; normalTitle = "Button"; ObjectID = "DtM-Gb-M8l";</note>
+      </trans-unit>
+      <trans-unit id="Dwa-IR-WFW.text">
+        <source>Want to know Vaccination Rate </source>
+        <target>想知道疫苗接种率</target>
+        <note>Class = "UILabel"; text = "Want to know Vaccination Rate "; ObjectID = "Dwa-IR-WFW";</note>
+      </trans-unit>
+      <trans-unit id="EOX-Zp-dzq.normalTitle">
+        <source>Choose Your Baby's Age</source>
+        <target>显示信息</target>
+        <note>Class = "UIButton"; normalTitle = "Choose Your Baby's Age"; ObjectID = "EOX-Zp-dzq";</note>
+      </trans-unit>
+      <trans-unit id="Ede-D4-e48.text">
+        <source>IN YOUR AREA ?</source>
+        <target>在你的区域？</target>
+        <note>Class = "UILabel"; text = "IN YOUR AREA ?"; ObjectID = "Ede-D4-e48";</note>
+      </trans-unit>
+      <trans-unit id="Edu-PQ-rrF.normalTitle">
+        <source>Find Toilets</source>
+        <note>Class = "UIButton"; normalTitle = "Find Toilets"; ObjectID = "Edu-PQ-rrF";</note>
+      </trans-unit>
+      <trans-unit id="Eiy-hT-euT.text">
+        <source>Find vaccination difference</source>
+        <note>Class = "UILabel"; text = "Find vaccination difference"; ObjectID = "Eiy-hT-euT";</note>
+      </trans-unit>
+      <trans-unit id="Eoe-9N-Ru7.text">
+        <source>Use our application to measure your</source>
+        <note>Class = "UILabel"; text = "Use our application to measure your"; ObjectID = "Eoe-9N-Ru7";</note>
+      </trans-unit>
+      <trans-unit id="FFG-Ij-2lX.normalTitle">
+        <source>Find More</source>
+        <note>Class = "UIButton"; normalTitle = "Find More"; ObjectID = "FFG-Ij-2lX";</note>
+      </trans-unit>
+      <trans-unit id="FLP-aP-MSo.text">
+        <source>Hospitals</source>
+        <note>Class = "UILabel"; text = "Hospitals"; ObjectID = "FLP-aP-MSo";</note>
+      </trans-unit>
+      <trans-unit id="Ftu-el-Nsk.title">
+        <source>Home</source>
+        <target>主页</target>
+        <note>Class = "UITabBarItem"; title = "Home"; ObjectID = "Ftu-el-Nsk";</note>
+      </trans-unit>
+      <trans-unit id="GxR-KM-AKQ.text">
+        <source>Do You Know?
+You need to prepare different knid of food for your baby in his/her different ages in Month</source>
+        <note>Class = "UILabel"; text = "Do You Know?\nYou need to prepare different knid of food for your baby in his/her different ages in Month"; ObjectID = "GxR-KM-AKQ";</note>
+      </trans-unit>
+      <trans-unit id="H3N-Eu-E1Y.text">
+        <source>Find the Difference Between China and Australia</source>
+        <note>Class = "UILabel"; text = "Find the Difference Between China and Australia"; ObjectID = "H3N-Eu-E1Y";</note>
+      </trans-unit>
+      <trans-unit id="IgI-jh-wXT.text">
+        <source>Maintain digital checklist </source>
+        <note>Class = "UILabel"; text = "Maintain digital checklist "; ObjectID = "IgI-jh-wXT";</note>
+      </trans-unit>
+      <trans-unit id="JGR-Lc-Cui.text">
+        <source>Label</source>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "JGR-Lc-Cui";</note>
+      </trans-unit>
+      <trans-unit id="JKy-o4-CAQ.title">
+        <source>Find Hospital</source>
+        <note>Class = "UIBarButtonItem"; title = "Find Hospital"; ObjectID = "JKy-o4-CAQ";</note>
+      </trans-unit>
+      <trans-unit id="JnW-do-vx4.title">
+        <source>Show Photo</source>
+        <note>Class = "UIBarButtonItem"; title = "Show Photo"; ObjectID = "JnW-do-vx4";</note>
+      </trans-unit>
+      <trans-unit id="KGn-4q-tP5.title">
+        <source>Tracker</source>
+        <note>Class = "UITabBarItem"; title = "Tracker"; ObjectID = "KGn-4q-tP5";</note>
+      </trans-unit>
+      <trans-unit id="LB7-gr-qxS.text">
+        <source>Understand your surburb's</source>
+        <note>Class = "UILabel"; text = "Understand your surburb's"; ObjectID = "LB7-gr-qxS";</note>
+      </trans-unit>
+      <trans-unit id="LS2-GK-eMx.title">
+        <source>Vaccination in Your Area</source>
+        <target>您所在地区的疫苗接种</target>
+        <note>Class = "UINavigationItem"; title = "Vaccination in Your Area"; ObjectID = "LS2-GK-eMx";</note>
+      </trans-unit>
+      <trans-unit id="M7x-iY-mOe.text">
+        <source>Find the Difference Between China and Australia</source>
+        <note>Class = "UILabel"; text = "Find the Difference Between China and Australia"; ObjectID = "M7x-iY-mOe";</note>
+      </trans-unit>
+      <trans-unit id="Mke-1j-MCF.text">
+        <source>Find Toilets</source>
+        <note>Class = "UILabel"; text = "Find Toilets"; ObjectID = "Mke-1j-MCF";</note>
+      </trans-unit>
+      <trans-unit id="N6e-xp-NWa.normalTitle">
+        <source>Find Parks</source>
+        <note>Class = "UIButton"; normalTitle = "Find Parks"; ObjectID = "N6e-xp-NWa";</note>
+      </trans-unit>
+      <trans-unit id="Ndn-Us-Ac9.text">
+        <source>Write note for future reference</source>
+        <note>Class = "UILabel"; text = "Write note for future reference"; ObjectID = "Ndn-Us-Ac9";</note>
+      </trans-unit>
+      <trans-unit id="Oof-Ee-P0s.normalTitle">
+        <source>Comming Soon...</source>
+        <note>Class = "UIButton"; normalTitle = "Comming Soon..."; ObjectID = "Oof-Ee-P0s";</note>
+      </trans-unit>
+      <trans-unit id="Si6-pY-pwV.title">
+        <source>Baby's Care</source>
+        <note>Class = "UITabBarItem"; title = "Baby's Care"; ObjectID = "Si6-pY-pwV";</note>
+      </trans-unit>
+      <trans-unit id="TOT-bC-GYS.text">
+        <source>We understand your concern as</source>
+        <note>Class = "UILabel"; text = "We understand your concern as"; ObjectID = "TOT-bC-GYS";</note>
+      </trans-unit>
+      <trans-unit id="TZR-Dt-vPC.title">
+        <source>Vaccination Info</source>
+        <target>疫苗接种信息</target>
+        <note>Class = "UINavigationItem"; title = "Vaccination Info"; ObjectID = "TZR-Dt-vPC";</note>
+      </trans-unit>
+      <trans-unit id="TyJ-NY-LQl.normalTitle">
+        <source>FIND MORE</source>
+        <note>Class = "UIButton"; normalTitle = "FIND MORE"; ObjectID = "TyJ-NY-LQl";</note>
+      </trans-unit>
+      <trans-unit id="Ula-JD-COa.text">
+        <source>Find Kindergartens</source>
+        <note>Class = "UILabel"; text = "Find Kindergartens"; ObjectID = "Ula-JD-COa";</note>
+      </trans-unit>
+      <trans-unit id="VlU-Xf-0tT.text">
+        <source>Vaccination Tracker</source>
+        <note>Class = "UILabel"; text = "Vaccination Tracker"; ObjectID = "VlU-Xf-0tT";</note>
+      </trans-unit>
+      <trans-unit id="VsW-do-yTG.title">
+        <source>Connect</source>
+        <note>Class = "UITabBarItem"; title = "Connect"; ObjectID = "VsW-do-yTG";</note>
+      </trans-unit>
+      <trans-unit id="Xxx-We-71h.title">
+        <source>Mom's Care</source>
+        <note>Class = "UINavigationItem"; title = "Mom's Care"; ObjectID = "Xxx-We-71h";</note>
+      </trans-unit>
+      <trans-unit id="aKW-RH-dCD.title">
+        <source>Baby's Care</source>
+        <note>Class = "UINavigationItem"; title = "Baby's Care"; ObjectID = "aKW-RH-dCD";</note>
+      </trans-unit>
+      <trans-unit id="b3q-iD-tt9.text">
+        <source>Find Parks</source>
+        <note>Class = "UILabel"; text = "Find Parks"; ObjectID = "b3q-iD-tt9";</note>
+      </trans-unit>
+      <trans-unit id="c9g-hs-7MW.text">
+        <source>Parks</source>
+        <note>Class = "UILabel"; text = "Parks"; ObjectID = "c9g-hs-7MW";</note>
+      </trans-unit>
+      <trans-unit id="cYr-4w-CUk.text">
+        <source>Vaccination Differences Between</source>
+        <note>Class = "UILabel"; text = "Vaccination Differences Between"; ObjectID = "cYr-4w-CUk";</note>
+      </trans-unit>
+      <trans-unit id="drT-Mg-3gu.normalTitle">
+        <source>Find More</source>
+        <note>Class = "UIButton"; normalTitle = "Find More"; ObjectID = "drT-Mg-3gu";</note>
+      </trans-unit>
+      <trans-unit id="e47-3k-ob3.text">
+        <source>Find nearby:</source>
+        <note>Class = "UILabel"; text = "Find nearby:"; ObjectID = "e47-3k-ob3";</note>
+      </trans-unit>
+      <trans-unit id="h9t-3t-ayg.normalTitle">
+        <source>Find Location</source>
+        <note>Class = "UIButton"; normalTitle = "Find Location"; ObjectID = "h9t-3t-ayg";</note>
+      </trans-unit>
+      <trans-unit id="hDy-Ao-jkN.text">
+        <source>Find the Difference Between China and Australia</source>
+        <note>Class = "UILabel"; text = "Find the Difference Between China and Australia"; ObjectID = "hDy-Ao-jkN";</note>
+      </trans-unit>
+      <trans-unit id="hT5-JK-1KW.title">
+        <source>Milestone</source>
+        <note>Class = "UITabBarItem"; title = "Milestone"; ObjectID = "hT5-JK-1KW";</note>
+      </trans-unit>
+      <trans-unit id="hU7-MJ-7rO.text">
+        <source>Label</source>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "hU7-MJ-7rO";</note>
+      </trans-unit>
+      <trans-unit id="jV1-bP-Tf7.text">
+        <source>Label</source>
+        <note>Class = "UILabel"; text = "Label"; ObjectID = "jV1-bP-Tf7";</note>
+      </trans-unit>
+      <trans-unit id="jeW-iA-kqP.text">
+        <source>Vaccination Tracker</source>
+        <note>Class = "UILabel"; text = "Vaccination Tracker"; ObjectID = "jeW-iA-kqP";</note>
+      </trans-unit>
+      <trans-unit id="kVB-yh-HaK.text">
+        <source>an immigrant mother in Australia</source>
+        <note>Class = "UILabel"; text = "an immigrant mother in Australia"; ObjectID = "kVB-yh-HaK";</note>
+      </trans-unit>
+      <trans-unit id="kcV-Mc-rhw.normalTitle">
+        <source>FIND MORE</source>
+        <note>Class = "UIButton"; normalTitle = "FIND MORE"; ObjectID = "kcV-Mc-rhw";</note>
+      </trans-unit>
+      <trans-unit id="lbI-rb-ihn.text">
+        <source>Find Childcare Centres</source>
+        <note>Class = "UILabel"; text = "Find Childcare Centres"; ObjectID = "lbI-rb-ihn";</note>
+      </trans-unit>
+      <trans-unit id="mFk-hA-DCt.text">
+        <source>based on contries</source>
+        <note>Class = "UILabel"; text = "based on contries"; ObjectID = "mFk-hA-DCt";</note>
+      </trans-unit>
+      <trans-unit id="ocV-4r-PNn.text">
+        <source>China and Australia</source>
+        <note>Class = "UILabel"; text = "China and Australia"; ObjectID = "ocV-4r-PNn";</note>
+      </trans-unit>
+      <trans-unit id="qru-b2-82s.text">
+        <source>and English</source>
+        <note>Class = "UILabel"; text = "and English"; ObjectID = "qru-b2-82s";</note>
+      </trans-unit>
+      <trans-unit id="rTX-JD-VyN.title">
+        <source>Vaccination Tracker</source>
+        <note>Class = "UINavigationItem"; title = "Vaccination Tracker"; ObjectID = "rTX-JD-VyN";</note>
+      </trans-unit>
+      <trans-unit id="sYa-OP-O2J.title">
+        <source>Connect You</source>
+        <note>Class = "UINavigationItem"; title = "Connect You"; ObjectID = "sYa-OP-O2J";</note>
+      </trans-unit>
+      <trans-unit id="seS-TC-2Iz.text">
+        <source>child growth over time and</source>
+        <note>Class = "UILabel"; text = "child growth over time and"; ObjectID = "seS-TC-2Iz";</note>
+      </trans-unit>
+      <trans-unit id="skx-bg-wbg.text">
+        <source>Kindergarten</source>
+        <note>Class = "UILabel"; text = "Kindergarten"; ObjectID = "skx-bg-wbg";</note>
+      </trans-unit>
+      <trans-unit id="uaI-x7-dKK.normalTitle">
+        <source>Find More</source>
+        <note>Class = "UIButton"; normalTitle = "Find More"; ObjectID = "uaI-x7-dKK";</note>
+      </trans-unit>
+      <trans-unit id="ub2-G6-mY1.normalTitle">
+        <source>Find Location</source>
+        <note>Class = "UIButton"; normalTitle = "Find Location"; ObjectID = "ub2-G6-mY1";</note>
+      </trans-unit>
+      <trans-unit id="uqG-sU-ZfG.text">
+        <source>Locations Tracker</source>
+        <note>Class = "UILabel"; text = "Locations Tracker"; ObjectID = "uqG-sU-ZfG";</note>
+      </trans-unit>
+      <trans-unit id="v2Z-ns-t79.text">
+        <source>Growth Tracker</source>
+        <note>Class = "UILabel"; text = "Growth Tracker"; ObjectID = "v2Z-ns-t79";</note>
+      </trans-unit>
+      <trans-unit id="wgm-Y1-svP.title">
+        <source>Locations Sort By Rate</source>
+        <note>Class = "UINavigationItem"; title = "Locations Sort By Rate"; ObjectID = "wgm-Y1-svP";</note>
+      </trans-unit>
+      <trans-unit id="whG-9V-LsO.text">
+        <source>manage the given tasks effectively:</source>
+        <note>Class = "UILabel"; text = "manage the given tasks effectively:"; ObjectID = "whG-9V-LsO";</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Week9Tutorial/en.lproj/InfoPlist.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="CFBundleDisplayName">
+        <source>mom's care</source>
+        <note>Bundle display name</note>
+      </trans-unit>
+      <trans-unit id="CFBundleName">
+        <source>Week9Tutorial</source>
+        <note>Bundle name</note>
+      </trans-unit>
+      <trans-unit id="NSFaceIDUsageDescription">
+        <source>This app requires Face ID permission to authenticate using Face recognition</source>
+        <note>Privacy - Face ID Usage Description</note>
+      </trans-unit>
+      <trans-unit id="NSLocationWhenInUseUsageDescription">
+        <source>Google map want to access your location</source>
+        <note>Privacy - Location When In Use Usage Description</note>
+      </trans-unit>
+    </body>
+  </file>
+  <file original="Week9Tutorial/en.lproj/Localizable.strings" datatype="plaintext" source-language="en" target-language="zh-Hans">
+    <header>
+      <tool tool-id="com.apple.dt.xcode" tool-name="Xcode" tool-version="10.2.1" build-num="10E1001"/>
+    </header>
+    <body>
+      <trans-unit id="OK">
+        <source>OK</source>
+        <note>Default action</note>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

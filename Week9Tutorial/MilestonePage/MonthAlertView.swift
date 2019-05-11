@@ -74,7 +74,7 @@ extension MonthAlertView {
         self.removeFromSuperview()
     }
     
-//    func configDataWithImage(_ name:String) {
-//        self.backImageView.image = UIImage(named: name)
-//    }
+    func configDataWithImage(_ name:String) {
+        self.backImageView.image = UIImage(named: name)
+    }
 }

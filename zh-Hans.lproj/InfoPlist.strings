@@ -1,0 +1,10 @@
+/* 
+  InfoPlist.strings
+  Week9Tutorial
+
+  Created by 张思宇 (Siyu Zhang) on 11/5/19.
+  Copyright © 2019 Jason Haasz. All rights reserved.
+*/
+
+//This is used to change the application's name
+//"CFBundleDisplayName" = "妈妈计划";

@@ -157,8 +157,8 @@ class UICollectionGridViewLayout: UICollectionViewLayout {
         let columnString = viewController.cols[columnIndex]
         //根据列头标题文件，估算各列的宽度
         let size = NSString(string: columnString).size(withAttributes: [
-            NSAttributedStringKey.font:UIFont.systemFont(ofSize: 15),
-            NSAttributedStringKey.underlineStyle:NSUnderlineStyle.styleSingle.rawValue
+            NSAttributedString.Key.font:UIFont.systemFont(ofSize: 15),
+            NSAttributedString.Key.underlineStyle:NSUnderlineStyle.single.rawValue
             ])
         
         //修改成所有列都平均分配（但宽度不能小于90）

@@ -10,7 +10,7 @@ import UIKit
 
 class GuideViewController:UIViewController,UIScrollViewDelegate
 {
-    var numOfPages = 3
+    var numOfPages = 4
     let scrollView = UIScrollView()
     let pages = NSMutableArray()
     let pageControl = UIPageControl()
@@ -19,7 +19,7 @@ class GuideViewController:UIViewController,UIScrollViewDelegate
     {
         let frame = self.view.bounds
         //scrollView的初始化
-        pageControl.numberOfPages = 3
+        pageControl.numberOfPages = 4
         
         
         scrollView.frame=self.view.bounds
@@ -30,10 +30,11 @@ class GuideViewController:UIViewController,UIScrollViewDelegate
         scrollView.showsHorizontalScrollIndicator=false
         scrollView.showsVerticalScrollIndicator=false
         scrollView.scrollsToTop=false
+        scrollView.backgroundColor = .white
         
         
         for i in 0..<numOfPages{
-            let imgfile = "\(i+1).png"
+            let imgfile = "home1"
             print(imgfile)
             let image = UIImage(named:"\(imgfile)")
             let imgView = UIImageView(image: image)
@@ -55,6 +56,8 @@ class GuideViewController:UIViewController,UIScrollViewDelegate
         //        self.view.addSubview(scrollView)
         
     }
+    
+    
     
     @objc func pageChanged(sender:AnyObject)
     {

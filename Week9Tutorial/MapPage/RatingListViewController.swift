@@ -26,7 +26,7 @@ class RatingListViewController: UIViewController,UITableViewDelegate,UITableView
         return 0.01
     }
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return self.dataArray!.count
+        return self.dataArray!.count + 1
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 44
@@ -36,19 +36,32 @@ class RatingListViewController: UIViewController,UITableViewDelegate,UITableView
         let name:UILabel = cell.viewWithTag(100) as! UILabel
         let rating:UILabel = cell.viewWithTag(101) as! UILabel
         
-        let dic:[String:Any] = self.dataArray![indexPath.row]
         
-        name.text = dic["name"] as? String
-        rating.text = (dic["rating"] as? NSNumber)?.stringValue
+        if indexPath.row != 0 {
+            let dic:[String:Any] = self.dataArray![indexPath.row - 1]
+            name.text = dic["name"] as? String
+            rating.text = (dic["rating"] as? NSNumber)?.stringValue
+            cell.backgroundColor = .white
+            
+        }
+        else {
+            name.text = NSLocalizedString("Name", comment: "")
+            rating.text = NSLocalizedString("Rate", comment: "")
+            name.font = UIFont.boldSystemFont(ofSize: 16)
+            rating.font = UIFont.boldSystemFont(ofSize: 16)
+            cell.backgroundColor = .white
+        }
         
         return cell
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
         
-        let vc:MapViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Map") as! MapViewController
-        vc.dic = self.dataArray![indexPath.row]
-        self.navigationController?.pushViewController(vc, animated: true)
+        if indexPath.row != 0 {
+            let vc:MapViewController = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "Map") as! MapViewController
+            vc.dic = self.dataArray![indexPath.row - 1]
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
     }
     
 }

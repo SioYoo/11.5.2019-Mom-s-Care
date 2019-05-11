@@ -11,20 +11,20 @@ import Firebase
 import FirebaseDatabase
 import Charts
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController,UITextFieldDelegate  {
 
     @IBOutlet weak var InfoButton: UIButton!
 
-
-    @IBOutlet weak var barChartView: BarChartView!
+    @IBOutlet weak var lineChartView: LineChartView!
+    
     @IBAction func covInfoBtn(_ sender: Any) {
         let a:Int? = Int(postCodeField.text ?? "0")
         
         if a != nil{
             if a! >= 3000 && a! <= 4000{
                 years = ["2011-12", "2012-13", "2013-14", "2014-15", "2015-16", "2016-17"]
-                barChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values:years)
-                barChartView.xAxis.granularity = 1
+                lineChartView.xAxis.valueFormatter = IndexAxisValueFormatter(values:years)
+                lineChartView.xAxis.granularity = 1
                 setChart(dataPoints: years, values: dataFromFirebaseArray[postCodeField.text!]! as [Double])
             }
             else{
@@ -45,6 +45,18 @@ class ThirdViewController: UIViewController {
     }
 
     @IBOutlet weak var postCodeField: UITextField!
+    
+    func textField(_ textField: UITextField, shouldChangeCharactersIn range: NSRange, replacementString string: String) -> Bool {
+        let aSet = NSCharacterSet(charactersIn:"0123456789").inverted
+        let compSepByCharInSet = string.components(separatedBy: aSet)
+        let numberFiltered = compSepByCharInSet.joined(separator: "")
+        let maxLength = 4
+        let currentString: NSString = textField.text! as NSString
+        let newString: NSString =
+            currentString.replacingCharacters(in: range, with: string) as NSString
+        return (newString.length <= maxLength) && (string == numberFiltered)
+    }
+    
     var ref: DatabaseReference?
     var dataFromFirebaseArray = [String:[Double]]()
     var years: [String]!
@@ -52,9 +64,11 @@ class ThirdViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        postCodeField.delegate = self
+        
         self.hideKeyboardWhenTappedAround()
         
-        barChartView.noDataText = "Please input your postcode above"
+        lineChartView.noDataText = "Please input your postcode above"
         
         InfoButton.layer.cornerRadius = 4
         
@@ -90,17 +104,33 @@ class ThirdViewController: UIViewController {
     }
     
     
+//    func setChart(dataPoints: [String], values: [Double]) {
+//        var dataEntries: [BarChartDataEntry] = []
+//
+//        for i in 0..<dataPoints.count {
+//            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(values[i]))
+//            dataEntries.append(dataEntry)
+//        }
+//
+//        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Percent full immunised (%)")
+//        let chartData = BarChartData(dataSet: chartDataSet)
+//        barChartView.data = chartData
+//    }
+    
     func setChart(dataPoints: [String], values: [Double]) {
-        var dataEntries: [BarChartDataEntry] = []
+        
+        var dataEntries: [ChartDataEntry] = []
         
         for i in 0..<dataPoints.count {
-            let dataEntry = BarChartDataEntry(x: Double(i), y: Double(values[i]))
+            let dataEntry = ChartDataEntry(x: Double(i), y: Double(values[i]))
             dataEntries.append(dataEntry)
         }
         
-        let chartDataSet = BarChartDataSet(values: dataEntries, label: "Percent full immunised (%)")
-        let chartData = BarChartData(dataSet: chartDataSet)
-        barChartView.data = chartData
+        let lineChartDataSet = LineChartDataSet(entries: dataEntries, label: "Percent full immunised (%)")
+        lineChartDataSet.lineWidth = 5
+        let lineChartData = LineChartData(dataSet: lineChartDataSet)
+        lineChartView.data = lineChartData
+        
     }
     
 

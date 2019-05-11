@@ -7,82 +7,88 @@
 //
 
 import UIKit
+import LocalAuthentication
 
 class SixthViewController: UIViewController {
     
+    var view1 = UIView()
     
-
-
     @IBOutlet weak var mainTableView: UITableView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configBaseView()
+        
+        self.configBaseView()
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        
+        view1.frame = CGRect(x: 0, y: 0, width: self.view.frame.width, height: self.view.frame.height)
+        view1.backgroundColor = .white
+        self.view.addSubview(view1)
+        authenticationWithTouchID()
     }
     
     var dataArray = [
-        ["title":"0-6","open":"0","detail":[
-            ["title":"Liquids","open":"0","detail":[
-                ["title":"Breastmilk","type":"0","image":"1"],
-                ["title":"Infant formula","type":"0","image":"2"]]]]],
-        ["title":"6-7","open":"0","detail":[
-            ["title":"Finely mashed or pureed foods","open":"0","detail":[
-                ["title":"Breastmilk","type":"0","image":"3"],
-                ["title":"Infant formula","type":"0","image":"4"],
-                ["title":"Infant cereals","type":"0","image":"5"],
-                ["title":"Smooth mashed pumpkin","type":"0","image":"6"],
-                ["title":"Smooth mashed potato","type":"0","image":"7"],
-                ["title":"Smooth mashed zucchini","type":"0","image":"8"],
-                ["title":"Smooth cooked apple","type":"0","image":"9"],
-                ["title":"Smooth mashed pear","type":"0","image":"10"],
-                ["title":"Well-cooked pureed liver","type":"0","image":"11"],
-                ["title":"Well-cooked pureed meat","type":"0","image":"12"]]]]],
-        ["title":"8-12","open":"0","detail":[
-            ["title":"Mashed or chopped foods and finger foods","open":"0","detail":[
-                ["title":"Breastmilk","type":"0","image":"13"],
-                ["title":"Infant formula","type":"0","image":"14"],
-                ["title":"Infant cereals","type":"0","image":"15"],
-                ["title":"Well-cooked and mashed fish","type":"0","image":"16"],
-                ["title":"Well-cooked and minced fish","type":"0","image":"17"],
-                ["title":"minced liver and minced","type":"0","image":"18"],
-                ["title":"minced liver and finely shredded meat","type":"0","image":"19"],
-                ["title":"minced liver and chicken","type":"0","image":"20"],
-                ["title":"minced liver and egg","type":"0","image":"21"],
-                ["title":"Variety of mashed or soft cooked vegetables","type":"0","image":"22"],
-                ["title":"cooked fruit","type":"0","image":"23"],
-                ["title":"Chipped soft raw fruit","type":"0","image":"24"],
-                ["title":"Cereals such as rice","type":"0","image":"25"]]]]],
-        ["title":"9-12","open":"0","detail":[
-            ["title":"Soft food","open":"0","detail":[
-                ["title":"Breastmilk","type":"0","image":"26"],
-                ["title":"Infant formula","type":"0","image":"27"],
-                ["title":"Infant cereals","type":"0","image":"28"],
-                ["title":"Well-cooked and mashed fish","type":"0","image":"29"],
-                ["title":"Well-cooked and minced fish","type":"0","image":"30"],
-                ["title":"minced liver and minced","type":"0","image":"31"],
-                ["title":"minced liver and finely shredded meat","type":"0","image":"32"],
-                ["title":"minced liver and chicken","type":"0","image":"33"],
-                ["title":"minced liver and egg","type":"0","image":"34"],
-                ["title":"Variety of mashed or soft cooked vegetables","type":"0","image":"35"],
-                ["title":"cooked fruit","type":"0","image":"36"],
-                ["title":"Chipped soft raw fruit","type":"0","image":"37"],
-                ["title":"Cereals such as rice","type":"0","image":"38"],
-                ["title":"custards","type":"0","image":"39"],
-                ["title":"custards","type":"0","image":"40"],
-                ["title":"yoghurt","type":"0","image":"41"]]]]],
-        ["title":"12+","open":"0","detail":[
-            ["title":"Family foods","open":"0","detail":[
-                ["title":"Breastmilk","type":"0","image":"42"],
-                ["title":"plain pasteurised full-cream milk","type":"0","image":"43"],
-                ["title":"Variety of foods from all food groups","type":"0","image":"44"],
-                ["title":"Caution must be taken with hard foods","type":"0","image":"45"]]]]]
-        
-        
+        ["title":"0-3 Months","open":"0","detail":[
+            ["title":"Checklist","open":"0","detail":[
+                ["title":"While lying on their tummy Pushes up on arms","type":"0","image":"Physical0-3.png"],
+                ["title":"While lying on their tummy Lifts and head up","type":"0","image":"Physical0-3.png"],
+                ["title":"Warning: Difficulty lifting head","type":"0","image":"Warning0-3(1).png"],
+                ["title":"Warning: Keeps hands fisted","type":"0","image":"Warning0-3(2).png"]
+                ]]
+            ]],
+        ["title":"3-6 Months","open":"0","detail":[
+            ["title":"Checklist","open":"0","detail":[
+                ["title":"Uses hands to support self while sitting","type":"0","image":"Physical3-6.png"],
+                ["title":"Rolls from back to tummy and tummy to back","type":"0","image":"Physical3-6.png"],
+                ["title":"accepts entire weight with legs","type":"0","image":"Physical3-6.png"],
+                ["title":"Warning:Rounded back","type":"0","image":"Warning3-6(1)"],
+                ["title":"Warning: Difficult to bring arms forward","type":"0","image":"Warning3-6(2)"]
+                ]]
+            ]],
+        ["title":"6-9 Months","open":"0","detail":[
+            ["title":"Checklist","open":"0","detail":[
+                ["title":"Sits and reaches for toys without falling","type":"0","image":"Physical6-9.png"],
+                ["title":"Moves from tummy or back into sitting","type":"0","image":"Physical6-9.png"],
+                ["title":"Starts to move with alternate leg arm movement","type":"0","image":"Physical6-9.png"],
+                ["title":"Keeps hands fisted and lacks arm movement","type":"0","image":"Physical6-9.png"],
+                ["title":"Warning: Uses one hand predominately","type":"0","image":"Warning6-9(1)"],
+                ["title":"Warning: Poor use of arms in sitting","type":"0","image":"Warning6-9(1)"],
+                ["title":"Warning: Difficulty crawling","type":"0","image":"Warning6-9(2)"],
+                ["title":"Warning: Inability to straighten back","type":"0","image":"Warning6-9(3)"],
+                ["title":"Warning: Cannot take weight on legs","type":"0","image":"Warning6-9(3)"]
+                
+                ]]
+            ]],
+        ["title":"9-12 Months","open":"0","detail":[
+            ["title":"Checklist","open":"0","detail":[
+                ["title":"Pulls to stand and cruises along furniture","type":"0","image":"Physical9-12.png"],
+                ["title":"Stands alone and takes independent steps","type":"0","image":"Physica9-12.png"],
+                ["title":"Warning: Sits with weight to one side","type":"0","image":"Warning9-12(2)"],
+                ["title":"Warning: Only use arm to pull up to standing","type":"0","image":"Warning9-12(1)"],
+                ["title":"Warning: Needs to use hand to maintain sitting","type":"0","image":"Warning9-12(2)"]
+                ]]
+            ]],
+        ["title":"12-15 Months","open":"0","detail":[
+            ["title":"Checklist","open":"0","detail":[
+                ["title":"Walks independently and seldom falls","type":"0","image":"Physical12-15.png"],
+                ["title":"Squats to pick up toy","type":"0","image":"Physical12-15.png"],
+                ["title":"Warning: Unable to take steps","type":"0","image":"Warning12-15"],
+                ["title":"Warning: Walks on toes","type":"0","image":"Warning12-15"],
+                ["title":"Warning: Poor standing balance","type":"0","image":"Warning12-15"]
+                
+                ]]
+            ]]
     ]
+    
+    
     
     fileprivate func configBaseView() {
         
-        self.navigationItem.title = "Baby's Food in Different Age"
+        self.navigationItem.title = "Track Your Baby's Growth"
         self.view.backgroundColor = .white
         self.mainTableView.backgroundColor = .white
         self.mainTableView.register(MileMonthListCell.classForCoder(), forCellReuseIdentifier: "MileMonthListCell")
@@ -142,7 +148,13 @@ extension SixthViewController : UITableViewDataSource {
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "MileMonthListCell",
                                                      for: indexPath) as! MileMonthListCell
-            cell.cellModel(title: "Month", detialOpen: false,isOpen: false)
+            
+            let title = UILabel(frame: CGRect(x: 0, y: 0, width: self.view.frame.width, height: cell.frame.height))
+            title.text = "Tap and Check Your Baby's Growth"
+            title.center.x = self.view.center.x
+            title.textAlignment = .center
+            title.font = UIFont.boldSystemFont(ofSize: 14)
+            cell.addSubview(title)
             cell.backgroundColor = .white
             cell.selectionStyle = .none
             return cell
@@ -193,7 +205,7 @@ extension SixthViewController : UITableViewDataSource {
                             let title = sectionDic["title"] as? String
                             let type = sectionDic["type"] as? String
                             if type == "1" {
-                                cell.backgroundColor = .darkGray
+                                cell.backgroundColor = .green
                             } else {
                                 cell.backgroundColor = .white
                             }
@@ -309,4 +321,125 @@ extension SixthViewController {
     }
     
 }
+
+extension SixthViewController {
+    
+    func authenticationWithTouchID() {
+        let localAuthenticationContext = LAContext()
+        localAuthenticationContext.localizedFallbackTitle = "Use Passcode"
+        
+        var authError: NSError?
+        let reasonString = "To access the secure data"
+        
+        if localAuthenticationContext.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: &authError){
+            
+            localAuthenticationContext.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reasonString) { success, evaluateError in
+                
+                if success {
+                    DispatchQueue.main.async {
+                        self.view1.removeFromSuperview()
+                    }
+                    
+                    
+                } else {
+                    
+                    
+                    //TODO: User did not authenticate successfully, look at error and take appropriate action
+                    guard let error = evaluateError else {
+                        
+                        return
+                    }
+                    
+                    print(self.evaluateAuthenticationPolicyMessageForLA(errorCode: error._code))
+                    
+                    //TODO: If you have choosen the 'Fallback authentication mechanism selected' (LAError.userFallback). Handle gracefully
+                    
+                }
+            }
+        } else {
+            
+            guard let error = authError else {
+                
+                return
+            }
+            //TODO: Show appropriate alert if biometry/TouchID/FaceID is lockout or not enrolled
+            print(self.evaluateAuthenticationPolicyMessageForLA(errorCode: error.code))
+
+        }
+    }
+    
+    func evaluatePolicyFailErrorMessageForLA(errorCode: Int) -> String {
+        var message = ""
+        if #available(iOS 11.0, macOS 10.13, *) {
+            switch errorCode {
+            case LAError.biometryNotAvailable.rawValue:
+                message = "Authentication could not start because the device does not support biometric authentication."
+                
+            case LAError.biometryLockout.rawValue:
+                message = "Authentication could not continue because the user has been locked out of biometric authentication, due to failing authentication too many times."
+                
+            case LAError.biometryNotEnrolled.rawValue:
+                message = "Authentication could not start because the user has not enrolled in biometric authentication."
+                
+            default:
+                message = "Did not find error code on LAError object"
+            }
+        } else {
+            switch errorCode {
+            case LAError.touchIDLockout.rawValue:
+                message = "Too many failed attempts."
+                
+            case LAError.touchIDNotAvailable.rawValue:
+                message = "TouchID is not available on the device"
+                
+            case LAError.touchIDNotEnrolled.rawValue:
+                message = "TouchID is not enrolled on the device"
+                
+            default:
+                message = "Did not find error code on LAError object"
+            }
+        }
+        
+        return message;
+    }
+    
+    func evaluateAuthenticationPolicyMessageForLA(errorCode: Int) -> String {
+        
+        var message = ""
+        
+        switch errorCode {
+            
+        case LAError.authenticationFailed.rawValue:
+            message = "The user failed to provide valid credentials"
+            
+        case LAError.appCancel.rawValue:
+            message = "Authentication was cancelled by application"
+            
+        case LAError.invalidContext.rawValue:
+            message = "The context is invalid"
+            
+        case LAError.notInteractive.rawValue:
+            message = "Not interactive"
+            
+        case LAError.passcodeNotSet.rawValue:
+            message = "Passcode is not set on the device"
+            
+        case LAError.systemCancel.rawValue:
+            message = "Authentication was cancelled by the system"
+            
+        case LAError.userCancel.rawValue:
+            //self.navigationController?.popToRootViewController(animated: true)
+            message = "The user did cancel"
+            
+        case LAError.userFallback.rawValue:
+            message = "The user chose to use the fallback"
+            
+        default:
+            message = evaluatePolicyFailErrorMessageForLA(errorCode: errorCode)
+        }
+        
+        return message
+    }
+}
+
 
